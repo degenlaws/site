@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" class="js-focus-visible bg-white dark:bg-gray-900 dark:text-white">
+  <head>
+    {% include "head.njk" %} <link rel="stylesheet" href="/static/styles.min.css">
+    <script defer src="/static/scripts.min.js"></script>
+  </head>
+  <body class="flex h-screen flex-col justify-between items-center">
+    <a href="#main" class="sr-only">Skip to main content</a>
+    {{ content | safe }}
+    <footer class="font-sans w-full hidden">
+      <div class="max-w-5xl mx-auto p-8">
+        <p>&copy; {{ site.currentYear }} Degen Laws
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
